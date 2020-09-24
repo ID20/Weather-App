@@ -19,7 +19,7 @@ module.exports = (app) => {
 	app.get('/search-location-weather', (req, res) => {
 		// build api URL with user zip
 		const baseUrl = 'http://api.openweathermap.org/data/2.5/forecast?q=';
-		const apiId = '&appid=<APIKEY>&units=metric';
+		const apiId = '&appid=API_KEY&units=metric';
 		const userLocation = (url1, url2, location) => {
 
 			let newUrl = url1 + location + url2;
